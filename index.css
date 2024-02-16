@@ -1,0 +1,46 @@
+.body {
+    margin: 0px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.logo, .logo-select {
+    position: absolute;
+    top: 16px;
+    left: 164px;
+    z-index: 10;
+}
+
+.logo-select {
+    z-index: 11;
+    color: white;
+    font-size: 24px;
+    margin: 0;
+    margin-left: 133px;
+    margin-top: 37px;
+}
+
+.list {
+    text-align: right; /* Выравниваем элементы списка по правому краю */
+    position: absolute; /* Абсолютное позиционирование */
+    top: 0; /* Отступ сверху */
+    right: 0; /* Отступ справа */
+    margin: 20px; /* Внешний отступ */
+}
+
+.list ul {
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем внутренний отступ списка */
+    display: flex; /* Устанавливаем отображение элементов списка в виде flex-контейнера */
+}
+
+.list ul li {
+    margin-right: 20px; /* Добавляем отступ между элементами списка */
+    color: white;
+}
