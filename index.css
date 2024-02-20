@@ -1,46 +1,79 @@
+*{
+    margin: 0px;
+}
+
 .body {
     margin: 0px;
 }
 
 .header {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    max-width: 100%;
-    overflow: hidden;
+    width: 100%; /* Ширина равна 100% ширины родительского элемента */
+    height: 200px; /* Пример высоты header, вы можете регулировать этот параметр */
+    background-image: url('path/to/your/svg/image.svg');
+    background-size: cover; /* Изображение будет заполнять всю область header */
+    background-position: center; /* Центрируем изображение */
+    background-repeat: no-repeat; /* Отключаем повторение фона */
 }
 
-.logo, .logo-select {
+
+.header__ari {
+    height: 931px;
+    background-image: url("./image/Ari.svg");
+    background-size: cover; /* Изображение будет заполнять всю область блока */
+    background-position: center; /* Центрируем изображение */
+    background-repeat: no-repeat; /* Отключаем повторение фона */
+}
+
+.header__logo {
+    top: 55px;
+    left: 155px;
+}
+
+.header__logo, .header__logo-select {
     position: absolute;
-    top: 16px;
-    left: 164px;
+    top: 51px;
+    left: 128px;
     z-index: 10;
 }
 
-.logo-select {
+.header__logo-select {
     z-index: 11;
     color: white;
+    font-size: 24px; 
+    font-family: Koulen, sans-serif; 
+    font-weight: 400; 
     font-size: 24px;
     margin: 0;
+    left: 165px;
     margin-left: 133px;
     margin-top: 37px;
 }
 
 .list {
-    text-align: right; /* Выравниваем элементы списка по правому краю */
-    position: absolute; /* Абсолютное позиционирование */
-    top: 0; /* Отступ сверху */
-    right: 0; /* Отступ справа */
-    margin: 20px; /* Внешний отступ */
+    text-decoration: none;
+    text-align: right; 
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    margin: 20px; 
 }
 
-.list ul {
-    list-style-type: none; /* Убираем маркеры списка */
-    padding: 0; /* Убираем внутренний отступ списка */
-    display: flex; /* Устанавливаем отображение элементов списка в виде flex-контейнера */
+.list__items {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0; 
+    display: flex; 
+    margin-top: 68px;
+    margin-right: 238px;
 }
 
-.list ul li {
-    margin-right: 20px; /* Добавляем отступ между элементами списка */
+.list__item {
+    text-decoration: none;
+    margin-right: 20px;
+    color: white;
+}
+
+.list__link {
+    text-decoration: none;
     color: white;
 }
