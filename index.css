@@ -9,10 +9,10 @@
 .header {
     width: 100%; /* Ширина равна 100% ширины родительского элемента */
     height: 200px; /* Пример высоты header, вы можете регулировать этот параметр */
-    background-image: url('path/to/your/svg/image.svg');
     background-size: cover; /* Изображение будет заполнять всю область header */
     background-position: center; /* Центрируем изображение */
     background-repeat: no-repeat; /* Отключаем повторение фона */
+    position: relative;
 }
 
 
@@ -47,6 +47,34 @@
     left: 165px;
     margin-left: 133px;
     margin-top: 37px;
+}
+
+.header__title{
+    width: 730px;
+    font-size: 102px;
+    line-height: 96px;
+    padding-left: 64px;
+    position: relative;
+    bottom: 505px;
+    color: white;
+    z-index: 3;
+}
+
+.header__subtitle {
+    position: absolute;
+    top: 540px;
+    left: 64px;
+    width: 388px;
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: normal;
+    margin: 0;
+    z-index: 3;
+    color: white;
+}
+
+.header__svyze{
+    
 }
 
 .list {
