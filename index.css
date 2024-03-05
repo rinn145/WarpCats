@@ -1,4 +1,7 @@
-*{
+@import url('./vendor/font/fonts.css');
+
+
+* {
     margin: 0px;
 }
 
@@ -7,21 +10,22 @@
 }
 
 .header {
-    width: 100%; /* Ширина равна 100% ширины родительского элемента */
-    height: 200px; /* Пример высоты header, вы можете регулировать этот параметр */
-    background-size: cover; /* Изображение будет заполнять всю область header */
-    background-position: center; /* Центрируем изображение */
-    background-repeat: no-repeat; /* Отключаем повторение фона */
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     position: relative;
 }
 
 
 .header__ari {
-    height: 931px;
+    /* width: 1920px; */
+    height: 927px;
     background-image: url("./image/Ari.svg");
-    background-size: cover; /* Изображение будет заполнять всю область блока */
-    background-position: center; /* Центрируем изображение */
-    background-repeat: no-repeat; /* Отключаем повторение фона */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .header__logo {
@@ -29,7 +33,8 @@
     left: 155px;
 }
 
-.header__logo, .header__logo-select {
+.header__logo,
+.header__logo-select {
     position: absolute;
     top: 51px;
     left: 128px;
@@ -39,9 +44,9 @@
 .header__logo-select {
     z-index: 11;
     color: white;
-    font-size: 24px; 
-    font-family: Koulen, sans-serif; 
-    font-weight: 400; 
+    font-size: 24px;
+    font-family: Koulen, sans-serif;
+    font-weight: 400;
     font-size: 24px;
     margin: 0;
     left: 165px;
@@ -49,48 +54,70 @@
     margin-top: 37px;
 }
 
-.header__title{
-    width: 730px;
-    font-size: 102px;
-    line-height: 96px;
-    padding-left: 64px;
+.header__title {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 68px;
+    width: 197px;
+    line-height: 94px;
+    height: 120px;
+    padding-left: 135px;
     position: relative;
-    bottom: 505px;
+    bottom: 656px;
     color: white;
     z-index: 3;
 }
 
+
 .header__subtitle {
     position: absolute;
-    top: 540px;
-    left: 64px;
+    top: 404px;
+    left: 133px;
     width: 388px;
     font-size: 18px;
     line-height: 25px;
     font-weight: normal;
-    margin: 0;
+    margin: 0px;
     z-index: 3;
     color: white;
 }
 
-.header__svyze{
-    
+.header__svyze {
+    cursor: pointer;
+    background-color: transparent;
+    border: transparent;
+}
+
+.svyze {
+    color: #AA759E;
+    bottom: 20px;
+    position: absolute;
+    left: 95px;
+    font-size: 40px;
+}
+
+.header__postion-button {
+    position: relative;
+    width: 40px;
+    bottom: 660px;
+    left: 123px;
 }
 
 .list {
     text-decoration: none;
-    text-align: right; 
-    position: absolute; 
-    top: 0; 
-    right: 0; 
-    margin: 20px; 
+    text-align: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
 }
 
 .list__items {
     text-decoration: none;
     list-style-type: none;
-    padding: 0; 
-    display: flex; 
+    padding: 0;
+    display: flex;
     margin-top: 68px;
     margin-right: 238px;
 }
@@ -104,4 +131,10 @@
 .list__link {
     text-decoration: none;
     color: white;
+}
+
+.list__line {
+    right: 8px;
+    bottom: 7px;
+    position: relative;
 }
