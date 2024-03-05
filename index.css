@@ -1,12 +1,11 @@
 @import url('./vendor/font/fonts.css');
 
-
-* {
-    margin: 0px;
+html {
+    overflow-x: hidden;
 }
 
-.body {
-    margin: 0px;
+* {
+    margin: 0;
 }
 
 .header {
@@ -18,9 +17,7 @@
     position: relative;
 }
 
-
 .header__ari {
-    /* width: 1920px; */
     height: 927px;
     background-image: url("./image/Ari.svg");
     background-size: cover;
@@ -36,53 +33,62 @@
 .header__logo,
 .header__logo-select {
     position: absolute;
-    top: 51px;
-    left: 128px;
+    top: 30px;
+    left: 100px;
     z-index: 10;
 }
 
 .header__logo-select {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 98;
+    font-style: normal;
     z-index: 11;
     color: white;
-    font-size: 24px;
-    font-family: Koulen, sans-serif;
-    font-weight: 400;
-    font-size: 24px;
+    font-size: 28px;
     margin: 0;
-    left: 165px;
-    margin-left: 133px;
-    margin-top: 37px;
+    top: 76px;
+    left: 163px;
+    margin-left: 101px;
+    width: 169px;
 }
 
 .header__title {
     font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-style: normal;
-    font-size: 68px;
-    width: 197px;
-    line-height: 94px;
-    height: 120px;
-    padding-left: 135px;
+    font-size: 65px;
+    min-width: 169px;
+    height: 116px;
+    line-height: 80px;
+    left: 133px;
     position: relative;
-    bottom: 656px;
+    bottom: 654px;
     color: white;
     z-index: 3;
 }
-
 
 .header__subtitle {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-style: normal;
     position: absolute;
-    top: 404px;
-    left: 133px;
-    width: 388px;
-    font-size: 18px;
-    line-height: 25px;
-    font-weight: normal;
-    margin: 0px;
+    top: 396px;
+    left: 138px;
+    width: 540px;
+    font-size: 25px;
+    line-height: 27px;
+    margin: 0;
     z-index: 3;
     color: white;
+    height: 60px;
 }
 
+.header__postion-button {
+    position: relative;
+    /* width: 40px; */
+    bottom: 655px;
+    left: 132px;
+}
 .header__svyze {
     cursor: pointer;
     background-color: transparent;
@@ -90,47 +96,47 @@
 }
 
 .svyze {
+    font-family: "Montserrat" , sans-serif ;
+    font-weight: 400;
+    font-style: normal;
+    max-width: 190px;
+    min-height: 24px;
     color: #AA759E;
-    bottom: 20px;
+    bottom: 25px;
     position: absolute;
-    left: 95px;
-    font-size: 40px;
+    left: 137px;
+    font-size: 21px;
 }
 
-.header__postion-button {
-    position: relative;
-    width: 40px;
-    bottom: 660px;
-    left: 123px;
-}
 
 .list {
-    text-decoration: none;
     text-align: right;
     position: absolute;
-    top: 0;
-    right: 0;
-    margin: 20px;
+    top: 8px;
+    right: 76px;
 }
 
 .list__items {
-    text-decoration: none;
     list-style-type: none;
     padding: 0;
     display: flex;
     margin-top: 68px;
-    margin-right: 238px;
+    position: relative;
+    right: 52px;
 }
 
 .list__item {
-    text-decoration: none;
     margin-right: 20px;
     color: white;
 }
 
 .list__link {
+    font-family: "Montserrat" , sans-serif ;
+    font-weight: 400;
+    font-style: normal;
     text-decoration: none;
     color: white;
+    font-size: 18px;
 }
 
 .list__line {
