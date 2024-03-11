@@ -1,146 +1,209 @@
 @import url('./vendor/font/fonts.css');
 
 html {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 * {
-    margin: 0;
+  margin: 0;
 }
 
 .header {
-    width: 100%;
-    height: 200px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
+  max-height: 927px;
 }
 
 .header__ari {
-    height: 927px;
-    background-image: url("./image/Ari.svg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  height: 927px;
+  background-image: url("./image/Ari.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .header__logo {
-    top: 55px;
-    left: 155px;
+  top: 55px;
+  left: 155px;
 }
 
 .header__logo,
 .header__logo-select {
-    position: absolute;
-    top: 30px;
-    left: 100px;
-    z-index: 10;
+  position: absolute;
+  top: 30px;
+  left: 100px;
+  z-index: 10;
 }
 
 .header__logo-select {
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 98;
-    font-style: normal;
-    z-index: 11;
-    color: white;
-    font-size: 28px;
-    margin: 0;
-    top: 76px;
-    left: 163px;
-    margin-left: 101px;
-    width: 169px;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 98;
+  font-style: normal;
+  z-index: 11;
+  color: white;
+  font-size: 28px;
+  margin: 0;
+  top: 76px;
+  left: 163px;
+  margin-left: 101px;
+  width: 169px;
 }
 
 .header__title {
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 65px;
-    min-width: 169px;
-    height: 116px;
-    line-height: 80px;
-    left: 133px;
-    position: relative;
-    bottom: 654px;
-    color: white;
-    z-index: 3;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 65px;
+  min-width: 169px;
+  height: 116px;
+  line-height: 80px;
+  left: 133px;
+  position: relative;
+  bottom: 654px;
+  color: white;
+  z-index: 3;
 }
 
 .header__subtitle {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    position: absolute;
-    top: 396px;
-    left: 138px;
-    width: 540px;
-    font-size: 25px;
-    line-height: 27px;
-    margin: 0;
-    z-index: 3;
-    color: white;
-    height: 60px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  position: absolute;
+  top: 396px;
+  left: 138px;
+  width: 540px;
+  font-size: 25px;
+  line-height: 27px;
+  margin: 0;
+  z-index: 3;
+  color: white;
+  height: 60px;
 }
 
 .header__postion-button {
-    position: relative;
-    /* width: 40px; */
-    bottom: 655px;
-    left: 132px;
+  position: relative;
+  /* width: 40px; */
+  bottom: 655px;
+  left: 132px;
 }
+
 .header__svyze {
-    cursor: pointer;
-    background-color: transparent;
-    border: transparent;
+  cursor: pointer;
+  background-color: transparent;
+  border: transparent;
 }
 
 .svyze {
-    font-family: "Montserrat" , sans-serif ;
-    font-weight: 400;
-    font-style: normal;
-    max-width: 190px;
-    min-height: 24px;
-    color: #AA759E;
-    bottom: 25px;
-    position: absolute;
-    left: 137px;
-    font-size: 21px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  max-width: 190px;
+  min-height: 24px;
+  color: #AA759E;
+  bottom: 25px;
+  position: absolute;
+  left: 137px;
+  font-size: 21px;
 }
 
 
 .list {
-    text-align: right;
-    position: absolute;
-    top: 8px;
-    right: 76px;
+  text-align: right;
+  position: absolute;
+  top: 8px;
+  right: 76px;
 }
 
 .list__items {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    margin-top: 68px;
-    position: relative;
-    right: 52px;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  margin-top: 68px;
+  position: relative;
+  right: 52px;
 }
 
 .list__item {
-    margin-right: 20px;
-    color: white;
+  margin-right: 20px;
+  color: white;
 }
 
 .list__link {
-    font-family: "Montserrat" , sans-serif ;
-    font-weight: 400;
-    font-style: normal;
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
 }
 
 .list__line {
-    right: 8px;
-    bottom: 7px;
-    position: relative;
+  right: 8px;
+  bottom: 7px;
+  position: relative;
+}
+
+.about {
+  height: 508px;
+  background: black;
+  text-align: center;
+}
+
+.about__container {
+  width: 1600px;
+  height: 327px;
+  margin: 0 auto;
+  /* Центрирование по горизонтали */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* Центрирование по вертикали */
+  padding-top: 100px;
+  margin-left: 116px;
+  margin-right: 116px;
+}
+
+.about__title {
+  font-family: "BebasNeue-ru", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 32px;
+  color: white;
+  padding-top: 50px;
+}
+
+.about__cats-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /* изменяем минимальную ширину и количество колонок */
+  gap: 87px;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0;
+  /* убираем отступы у списка */
+  list-style: none;
+  /* убираем маркеры списка */
+}
+
+.about__cat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  /* Добавлено для выравнивания текста по центру */
+}
+
+.about-cat {
+  max-width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  padding-bottom: 35px;
+}
+
+.about__subtitle {
+  font-family: "BebasNeue-ru", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  color: #fff;
+  width: 323px;
+  height: 25px;
 }
