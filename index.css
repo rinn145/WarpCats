@@ -64,7 +64,7 @@ html {
 }
 
 .header__subtitle {
-  font-family: "Montserrat-Regular", sans-serif;
+  font-family: "Montserrat-Regular", sans-serif;;
   font-weight: 300;
   font-style: normal;
   position: absolute;
@@ -276,7 +276,7 @@ html {
 }
 
 .study__frame-info {
-  font-family: "Montserrat-Regular", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 300;
   font-style: normal;
   color: #fff;
@@ -290,6 +290,14 @@ html {
   text-align: left;
 }
 
+.study__frame-info__adictional {
+  display: none;
+  color: #fff;
+}
+
+.study__frames:hover .study__frame-info__adictional {
+  display: block;
+}
 
 .study__frames:hover .inner-one {
   transform: translateY(-20px);
