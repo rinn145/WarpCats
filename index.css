@@ -1,4 +1,5 @@
 @import url('./vendor/font/fonts.css');
+@import url('./normalize.css');
 
 html {
   overflow-x: hidden;
@@ -63,7 +64,7 @@ html {
 }
 
 .header__subtitle {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat-Regular", sans-serif;
   font-weight: 300;
   font-style: normal;
   position: absolute;
@@ -206,4 +207,162 @@ html {
   color: #fff;
   width: 323px;
   height: 25px;
+}
+
+.study {
+  padding-top: 166px;
+  width: 100%;
+  background: black;
+  text-align: center;
+}
+
+.study__title {
+  font-family: "BebasNeue-ru", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 32px;
+  color: white;
+  padding: 50px 0;
+  max-width: 297px;
+  height: 40px;
+  margin: auto;
+}
+
+.study__container {
+  max-width: 1600px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+.study__frame {
+  width: 500px;
+  height: auto;
+  position: relative;
+}
+
+.study__frames {
+  margin: auto;
+  position: relative;
+}
+
+.study__frame-inner {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  clip-path: polygon(0 0, 100% 13%, 100% 99%, 0% 87%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.3s ease-in-out, opacity 0.5s ease;
+  opacity: 1;
+}
+
+
+
+.inner-one {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 7)), url('./image/west-splash.svg');
+}
+
+.inner-two {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 7)), url('./image/west-splash-2.svg');
+}
+
+.inner-three {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 7)), url('./image/west-splash-3.svg');
+}
+
+.study__frame-info {
+  font-family: "Montserrat-Regular", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #fff;
+  position: absolute;
+  width: 433px;
+  max-height: 132px;
+  top: 64%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  text-align: left;
+}
+
+
+.study__frames:hover .inner-one {
+  transform: translateY(-20px);
+  opacity: 0;
+}
+
+.study__frames:hover .inner-two {
+  transform: translateY(-20px);
+  opacity: 0;
+}
+
+.study__frames:hover .inner-three {
+  transform: translateY(-20px);
+  opacity: 0;
+}
+
+/* При наведении на описание товара показываем его с эффектом масштабирования */
+.study__frames:hover .study__frame-info {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+  top: 30%;
+  /* Пример значения, которое поднимает текст наверх */
+  transition: opacity 0.5s ease, transform 0.5s ease, top 0.5s ease;
+  /* Добавлено свойство transition для плавного перехода */
+}
+.study__price,
+.study__select {
+  position: absolute;
+  z-index: 1;
+}
+
+.study__price {
+  font-family: "BebasNeue-ru", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #AA759E;
+  font-size: 58px;
+  right: 160px;
+  max-width: 500px;
+  top: 442px;
+  left: 15%;
+  transform: translateX(-50%);
+}
+
+.study__select{
+  font-family: "BebasNeue-ru", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+  top: 450px;
+  background-color: #AA759E;
+  color: #ffffff;
+  width: 210px;
+  height: 48px;
+  border-radius: 3px;
+  bottom: 0;
+  left: 70%;
+  transform: translateX(-50%);
+  border: transparent;
+  cursor: pointer;
+}
+
+.study__name {
+  font-family: "BebasNeue-ru", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 26px;
+  position: absolute;
+  z-index: 1;
+  top: 66px; /* Подстройте это значение в зависимости от вашего дизайна */
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  max-width: 235px;
+  height: 27px;
 }

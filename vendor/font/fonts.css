@@ -22,3 +22,11 @@
     src: url("./Montserrat-Medium.woff2") format("woff2"),
          url("./Montserrat-Medium.woff") format("woff");
 }
+
+@font-face {
+  font-family: "Montserrat-Regular";
+  font-weight: 300;
+  font-style: normal;
+  src: url("./Montserrat-Regular.woff") format("woff"),
+       url("./Montserrat-Regular.woff2.ttf") format("woff2");
+}
