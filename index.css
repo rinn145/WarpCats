@@ -64,7 +64,7 @@ html {
 }
 
 .header__subtitle {
-  font-family: "Montserrat-Regular", sans-serif;;
+  font-family: "Montserrat-Regular", sans-serif;
   font-weight: 300;
   font-style: normal;
   position: absolute;
@@ -96,15 +96,16 @@ html {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-style: normal;
-  max-width: 190px;
-  min-height: 24px;
-  color: #AA759E;
   bottom: 25px;
   position: absolute;
   left: 137px;
   font-size: 21px;
 }
 
+.svyze a {
+  color: #AA759E;
+  text-decoration: none;
+}
 
 .list {
   text-align: right;
@@ -276,7 +277,7 @@ html {
 }
 
 .study__frame-info {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat-Regular" , sans-serif;
   font-weight: 300;
   font-style: normal;
   color: #fff;
@@ -323,6 +324,7 @@ html {
   transition: opacity 0.5s ease, transform 0.5s ease, top 0.5s ease;
   /* Добавлено свойство transition для плавного перехода */
 }
+
 .study__price,
 .study__select {
   position: absolute;
@@ -342,7 +344,7 @@ html {
   transform: translateX(-50%);
 }
 
-.study__select{
+.study__select {
   font-family: "BebasNeue-ru", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -367,7 +369,8 @@ html {
   font-size: 26px;
   position: absolute;
   z-index: 1;
-  top: 66px; /* Подстройте это значение в зависимости от вашего дизайна */
+  top: 66px;
+  /* Подстройте это значение в зависимости от вашего дизайна */
   left: 50%;
   transform: translateX(-50%);
   color: #fff;
