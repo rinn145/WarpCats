@@ -6,7 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="200x200" href="/image/logo.svg">
+  <link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick/slick-theme.css">
   <link rel="stylesheet" href="./index.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="./slick-1.8.1/slick/slick.min.js"></script>
   <title>WARPIK</title>
 </head>
 
@@ -79,13 +82,13 @@
             можете сыграть в игру, где коуч дает вам живую обратную связь!</p>
           <ul class="study__frame-info__adictional">
             <li>
-              Lorem, ipsum dolor.
+              Разбор ваших ОСНОВНЫХ ошибок
             </li>
             <li>
-              Lorem, ipsum dolor.
+              Найдем что мешает ВАМ играть лучше
             </li>
             <li>
-              Lorem, ipsum dolor.
+              Подскажем как подняться по ранговой лестнице
             </li>
           </ul>
         </div>
@@ -94,20 +97,23 @@
       <div class="study__frames">
         <h2 class="study__name">Курс из 3 занятий</h2>
         <div class="study__frame-inner inner-two" alt="west"></div>
-        <p class="study__price">500$</p>
+        <p class="study__price">2500$</p>
         <button class="study__select">Купить</button>
         <div class="study__frame-info">
           <p>Этот тариф дает ОГРОМНОЕ улучшение, поможет увидеть все ваши ошибки и исправить
             самые крупные!</p>
           <ul class="study__frame-info__adictional">
             <li>
-              Lorem, ipsum dolor.
+              3 часа подробного коучинга
             </li>
             <li>
-              Lorem, ipsum dolor.
+              Более глубокий разбор ошибок, которые ТОРМОЗЯТ ваше продвижение
             </li>
             <li>
-              Lorem, ipsum dolor.
+              Формирование пула персонажей, и объяснение матчапов
+            </li>
+            <li>
+              Подробный разбор ваших РЕПЛЕЕВ
             </li>
           </ul>
         </div>
@@ -116,20 +122,23 @@
       <div class="study__frames">
         <h2 class="study__name">Бонус плюс</h2>
         <div class="study__frame-inner inner-three" alt="west"></div>
-        <p class="study__price">500$</p>
+        <p class="study__price">3500$</p>
         <button class="study__select">Купить</button>
         <div class="study__frame-info">
           <p>Это БЕЗУСЛОВНО ЛУЧШЕЕ, что вы можете сделать, если вы серьезно настроены поднимать
             рейтинг. Вы увидите ОГРОМНЫЙ прогресс в своей игре и будете стремительно брать новые вершины!</p>
           <ul class="study__frame-info__adictional">
             <li>
-              Lorem, ipsum dolor.
+              10 часов подробного коучинга
             </li>
             <li>
-              Lorem, ipsum dolor.
+              Значительные УЛУЧШЕНИЯ ваших навыков
             </li>
             <li>
-              Lorem, ipsum dolor.
+              Знания о том, как выигрывать 1 в 9
+            </li>
+            <li>
+              Гарантия повышения ВАШЕГО максимального ранга
             </li>
           </ul>
         </div>
@@ -138,11 +147,56 @@
     </div>
   </section>
 
-  <section class="">
-
-
+  <section class="workers">
+    <div class="workers__container">
+      <h2 class="workers__title">Наши коучи</h2>
+      <div class="coach-slider">
+        <div class="coach-slide">
+          <div class="coach-image"></div>
+          <div class="coach-info">
+            <h2>Гигачад Жесткий</h2>
+            <p>Ранг: <span>Ранг коуча 1</span></p>
+            <p>Роль: <span>Роль коуча 1</span></p>
+            <p>Персонаж: <span>Персонаж коуча 1</span></p>
+            <div class="about-coach">
+              <h3>О коуче</h3>
+              <p>Описание коуча 1.</p>
+            </div>
+          </div>
+        </div>
+        <div class="coach-slide">
+          <div class="coach-image"></div>
+          <div class="coach-info">
+            <h2>Гигачад Жесткий</h2>
+            <p>Ранг: <span>Ранг коуча 2</span></p>
+            <p>Роль: <span>Роль коуча 2</span></p>
+            <p>Персонаж: <span>Персонаж коуча 2</span></p>
+            <div class="about-coach">
+              <h3>О коуче</h3>
+              <p>Описание коуча 2.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Добавьте сколько угодно слайдов для других коучей -->
+      </div>
+    </div>
   </section>
 
-</body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      let sliders = document.querySelectorAll('.coach-slider');
 
-</html>
+      sliders.forEach(function (slider) {
+        $(slider).slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true, // Включаем точки (индикаторы)
+          autoplay: true,
+          autoplaySpeed: 2000, // Скорость автоматической прокрутки
+        });
+      });
+    });
+  </script>
+
+  </body>
+  </html>
