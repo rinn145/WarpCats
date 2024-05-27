@@ -384,20 +384,24 @@ html {
 }
 
 
+/*workers*/
+
+
 .workers {
-  height: 668px;
+  width: 100%;
   text-align: center;
+  color: white;
 }
 
 .workers__container {
-  width: 1600px;
+  max-width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 221px;
-  margin-left: 116px;
-  margin-right: 116px;
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .workers__title {
@@ -405,76 +409,160 @@ html {
   font-weight: 400;
   font-style: normal;
   font-size: 32px;
-  color: white;
-  margin-top: 111px;
+  margin-top: 20px;
 }
 
-
-/* Стили для контейнера слайдера */
 .coach-image {
   position: relative;
-  width: 955px;
+  width: 844px;
   height: 551px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 7)), url('./image/Akali.svg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url('./image/Akali.svg');
   background-size: cover;
   background-position: center;
   margin-top: 55px;
   margin-bottom: 55px;
   margin-right: 21px;
+  left: 89px;
 }
 
-/* Стили для контейнера слайдера */
-.coach-slider {
-  width: 100%;
-  display: flex;
-  flex-wrap: nowrap;
-  scroll-snap-type: x mandatory; /* Задаем тип прокрутки по оси X и указываем, что прокрутка должна происходить по ширине блоков */
-  overflow-x: auto;
-  scrollbar-color: rgba(255, 255, 255, 0.5) rgba(0, 0, 0, 0.3); /* Цвет скроллбара и его трека */
+/* Adjusting the coach-slider styling */
+.coach-slider .slick-prev, .slick-next {
+  z-index: 2;
+  color: #fff;
 }
 
-.coach-slider::-webkit-scrollbar {
-  width: 8px; /* Ширина скроллбара */
-}
-
-/* Стили для трека скроллбара */
-.coach-slider::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0.3); /* Цвет трека */
-}
-
-/* Стили для ползунка скроллбара */
-.coach-slider::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.5); /* Цвет ползунка */
-  border-radius: 4px; /* Радиус скругления углов ползунка */
-}
-
-/* Стили для каждого слайда */
 .coach-slide {
-  flex: 0 0 auto;
-  width: 100%;
-  margin-right: 15px;
-  scroll-snap-align: start; /* Указываем, что каждый слайд должен быть прокручен до начала видимой области */
-}
-
-/* Стили для информации о коуче */
-.coach-info {
   position: relative;
+}
+
+.coach-slider .slick-prev:before,
+.coach-slider .slick-next:before {
+  font-size: 30px;
+}
+
+.coach-slider .slick-dots {
+  bottom: -30px; /* Adjust the position of the dots if necessary */
+  font-size: 66px;
+}
+
+.coach-slider .slick-dots li button:before {
+  color: #fff; /* Adjust the color of the dots */
+  font-size: 66px;
+}
+
+.coach-slider .slick-dots li.slick-active button:before {
+  color: #AA759E; /* Adjust the color of the active dot */
+  font-size: 66px;
+}
+
+/* Ensure coach info is styled properly */
+.coach-info {
   color: white;
-  bottom: 500px;
-  left: 300px;
+  text-align: left;
+  position: absolute;
+  bottom: 100px;
+  right: 514px;
+  top: 20px;
+  z-index: 2;
+  padding: 31px;
+  max-width: 320px;
+  width: 800px;
+  height: 400px;
 }
 
-/* Стили для заголовка имени коуча */
 .coach-info h2 {
-    margin-top: 0;
+  margin: 0;
+  font-size: 30px;
+  font-family: "BebasNeue-ru", sans-serif;
+  color: #AA759E;
+  background-color: #171616;
+  width: 779px;
+  height: 39px;
+  margin-bottom: 12px;
+  padding: 28px 0 25px 31px;
 }
 
-/* Стили для блока с описанием коуча */
+.coach-rang {
+  width: 349px;
+  height: 32px;
+  position: relative;
+  left: 431px;
+  bottom: 106px;
+}
+
+.coach-role{
+  width: 388px;
+  height: 33px;
+}
+
+.coach-char{
+  width: 780px;
+  height: 25px;
+  position: relative;
+  bottom: 107px;
+}
+.coach-rang,
+.coach-role,
+.coach-char {
+  margin: 12px 0;
+  font-size: 18px;
+  background-color: #171616;
+  padding: 31px 0 30px 31px;
+  font-family: "Montserrat-Regular";
+  font-weight: 700;
+  font-style: normal;
+}
+
+.coach-role img {
+  position: relative;
+  left: 120px;
+  bottom: 35px;
+}
+
+.coach-rang img {
+  position: relative;
+  left: 60px;
+  bottom: 64px;
+}
+
+
 .about-coach {
-    margin-top: 10px; /* Примерный отступ между информацией и блоком о коуче */
+  margin-top: 12px;
+  width: 811px;
+  bottom: 114px;
+  position: relative;
 }
 
-/* Стили для заголовка блока о коуче */
 .about-coach h3 {
-    margin-top: 0;
+  margin-top: 21px;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 5px 10px;
+  background-color: #171616;
+  padding: 19px 36px 0px;
 }
+
+.about-coach ul {
+  font-family: "Montserrat-Regular";
+  font-weight: 700;
+  font-style: normal;
+  line-height: 21.78px;
+  font-size: 18px;
+  padding: 18px 15px 36px;
+  background-color: #171616;
+}
+
+.about-coach li {
+  font-family: "Montserrat-Regular";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  position: relative;
+  left: 50px;
+  max-width: 739px;
+  height: 83px;
+}
+
+

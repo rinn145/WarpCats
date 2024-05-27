@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Bebas Neue";
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
     src: url("./BebasNeue-Regular.woff2") format("woff2"),
          url("./BebasNeue-Regular.woff") format("woff");
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: "BebasNeue-ru";
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
   src: url("./BebasNeue-ru.woff2") format("woff2"),
        url("./BebasNeue-ru.woff") format("woff");
@@ -25,9 +25,8 @@
 
 @font-face {
   font-family: "Montserrat-Regular";
-  font-weight: 300;
+  font-weight: 500;
   font-style: normal;
-  src: url("./Montserrat-Regular.woff2.ttf") format("woff2"),
+  src: url("./Montserrat-Regular.woff2") format("woff2"),
        url("./Montserrat-Regular.woff") format("woff");
 }
-
