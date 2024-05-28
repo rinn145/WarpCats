@@ -565,4 +565,150 @@ html {
   height: 83px;
 }
 
+/* Reviews Section */
+.reviews {
+  margin-top: 132px;
+  margin-bottom: 150px;
+  padding: 40px 0;
+  background-color: #000;
+  color: #fff;
+}
+
+.reviews__title {
+  font-family: "BebasNeue-ru", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.reviews__container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.review {
+
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.review__image {
+  position: relative;
+  top: 17px;
+  right: 62px;
+  border-radius: 10px;
+}
+.review__image-r{
+  position: relative;
+  right: 440px;
+}
+.review__content {
+  margin-top: 10px;
+}
+
+.review__name {
+  position: relative;
+  bottom: 60px;
+  left: 80px;
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.review__date {
+  position: relative;
+  bottom: 60px;
+  left: 80px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.review__text {
+  position: relative;
+  font-size: 14px;
+  bottom: 20px;
+  line-height: 1.5;
+  margin: 10px 0;
+}
+
+.review__link {
+  position: relative;
+  color: #AA759E;
+  left: 300px;
+  text-decoration: none;
+}
+
+.review__link:hover {
+  text-decoration: underline;
+}
+
+/* Footer Section */
+.footer {
+  background-color: #111;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer__container {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__logo {
+  width: 100px;
+  height: auto;
+  position: relative;
+  right: 500px;
+}
+
+.footer__nav {
+  position: relative;
+  right: 420px;
+  margin-bottom: 20px;
+}
+
+.footer__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.footer__link {
+  color: #AA759E;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer__link:hover {
+  text-decoration: underline;
+}
+
+.footer__socials {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  position: relative;
+  right: 750px;
+  top: 35px;
+}
+
+.footer__social img {
+  width: 24px;
+  height: 24px;
+}
+
+.footer__slogan {
+  font-size: 16px;
+  color: #aaa;
+  position: relative;
+  left: 460px;
+}
 
