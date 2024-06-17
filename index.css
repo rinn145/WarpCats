@@ -37,7 +37,8 @@ html {
 
 .header__logo-select {
   font-family: "Bebas Neue", sans-serif;
-  font-weight: normal; /* Исправлено значение */
+  font-weight: normal;
+  /* Исправлено значение */
   font-style: normal;
   z-index: 11;
   color: white;
@@ -277,7 +278,7 @@ html {
 }
 
 .study__frame-info {
-  font-family: "Montserrat-Regular" , sans-serif;
+  font-family: "Montserrat-Regular", sans-serif;
   font-weight: 300;
   font-style: normal;
   color: #fff;
@@ -297,7 +298,7 @@ html {
 }
 
 .study__frame-info__adictional li {
- margin-top: 15px;
+  margin-top: 15px;
 }
 
 .study__frames:hover .study__frame-info__adictional {
@@ -426,7 +427,8 @@ html {
 }
 
 /* Adjusting the coach-slider styling */
-.coach-slider .slick-prev, .slick-next {
+.coach-slider .slick-prev,
+.slick-next {
   z-index: 2;
   color: #fff;
 }
@@ -441,17 +443,20 @@ html {
 }
 
 .coach-slider .slick-dots {
-  bottom: -30px; /* Adjust the position of the dots if necessary */
+  bottom: -30px;
+  /* Adjust the position of the dots if necessary */
   font-size: 66px;
 }
 
 .coach-slider .slick-dots li button:before {
-  color: #fff; /* Adjust the color of the dots */
+  color: #fff;
+  /* Adjust the color of the dots */
   font-size: 66px;
 }
 
 .coach-slider .slick-dots li.slick-active button:before {
-  color: #AA759E; /* Adjust the color of the active dot */
+  color: #AA759E;
+  /* Adjust the color of the active dot */
   font-size: 66px;
 }
 
@@ -490,17 +495,18 @@ html {
   bottom: 106px;
 }
 
-.coach-role{
+.coach-role {
   width: 388px;
   height: 33px;
 }
 
-.coach-char{
+.coach-char {
   width: 780px;
   height: 25px;
   position: relative;
   bottom: 107px;
 }
+
 .coach-rang,
 .coach-role,
 .coach-char {
@@ -567,48 +573,108 @@ html {
 
 /* Reviews Section */
 .reviews {
-  margin-top: 132px;
-  margin-bottom: 150px;
-  padding: 40px 0;
-  background-color: #000;
-  color: #fff;
+  width: 100%;
+  height: 500px;
+  text-align: center;
+  color: white;
+  margin-top: 50px;
+  margin-bottom: 120px;
 }
 
 .reviews__title {
   font-family: "BebasNeue-ru", sans-serif;
   font-weight: 400;
   font-style: normal;
-  text-align: center;
-  font-size: 36px;
+  font-size: 32px;
   margin-bottom: 20px;
+  margin-top: 120px;
 }
 
-.reviews__container {
+.reviews-slider {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
   display: flex;
+}
+
+.review-slide {
+  position: relative;
   justify-content: center;
-  gap: 20px;
+  align-items: center;
+  margin: 0 10px;
 }
 
 .review {
-
+  /* background-color: #171616; */
   padding: 20px;
-  width: 300px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-align: left;
+  max-width: 800px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 }
 
 .review__image {
-  position: relative;
-  top: 17px;
-  right: 62px;
+  max-width: 100px;
+  position: absolute;
   border-radius: 10px;
 }
-.review__image-r{
+
+
+.review__name {
+  font-size: 24px;
+  color: #AA759E;
+  margin-bottom: 10px;
+}
+
+.review__date {
+  position: relative;
+  left: 123px;
+  font-size: 14px;
+  max-width: 94px;
+  color: #aaa;
+}
+
+.review__link:hover {
+  text-decoration: underline;
+}
+
+/* Adjusting the reviews-slider styling */
+.reviews-slider .slick-prev,
+.reviews-slider .slick-next {
+  z-index: 2;
+  color: #fff;
+}
+
+.reviews-slider .slick-prev:before,
+.reviews-slider .slick-next:before {
+  font-size: 30px;
+
+}
+
+.reviews-slider .slick-dots {
+  margin-bottom: 83px;
+  font-size: 66px;
+}
+
+.reviews-slider .slick-dots li button:before {
+  color: #fff;
+  font-size: 66px;
+}
+
+.reviews-slider .slick-dots li.slick-active button:before {
+  color: #AA759E;
+  font-size: 66px;
+}
+
+.review__image-r {
   position: relative;
   right: 440px;
 }
+
 .review__content {
+  position: absolute;
   margin-top: 10px;
+  color: #fff;
 }
 
 .review__name {
@@ -619,20 +685,15 @@ html {
   margin: 10px 0;
 }
 
-.review__date {
-  position: relative;
-  bottom: 60px;
-  left: 80px;
-  font-size: 14px;
-  color: #aaa;
-}
-
 .review__text {
   position: relative;
-  font-size: 14px;
-  bottom: 20px;
+  top: 0px;
+  left: 112px;
   line-height: 1.5;
   margin: 10px 0;
+  max-width: 200px;
+  font-size: 16px;
+  margin-bottom: 20px;
 }
 
 .review__link {
@@ -645,6 +706,7 @@ html {
 .review__link:hover {
   text-decoration: underline;
 }
+
 
 /* Footer Section */
 .footer {
@@ -711,4 +773,5 @@ html {
   position: relative;
   left: 460px;
 }
+
 
