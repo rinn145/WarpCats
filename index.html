@@ -12,32 +12,40 @@
 </head>
 
 <body class="body">
-  <header class="header">
-    <div class="header__ari" alt="ari"></div>
-    <img class="header__logo" src="/image/logo.svg" alt="UmnickBlyat">
-    <h1 class="header__title">WARPIK</h1>
-    <h2 class="header__logo-select">League of Legends</h2>
-    <p class="header__subtitle">С нами любой сильвероид станет играть как человек</p>
-    <div class="header__postion-button">
-      <button class="header__svyze">
-        <p class="svyze"><a href="https://t.me/punch_and_run" target="_blank">Связаться&nbsp;с&nbsp;нами</a></p>
-        <img src="./image/button_svyze.svg" alt="button_svyze">
-      </button>
+  <header class="header header__ari">
+    <div class="overlay">
     </div>
+      <div class="top-side__header">
+        <div class="top-side__left">
+          <img class="header__logo" src="/image/logo.svg" alt="UmnickBlyat">
+          <h2 class="header__logo-select">League of Legends</h2>
+        </div>
+        <nav class="list">
+          <ul class="list__items">
+            <li class="list__item"><a class="list__link" href="#a-bout">Почему именно мы?</a></li>
+            <img src="image/WhiteLine.svg" class="list__line" alt="Whiteline">
+            <li class="list__item"><a class="list__link" href="">Программы</a></li>
+            <img src="image/WhiteLine.svg" class="list__line" alt="Whiteline">
+            <li class="list__item"><a class="list__link" href="">Коучи</a></li>
+            <img src="image/WhiteLine.svg" class="list__line" alt="Whiteline">
+            <li class="list__item"><a class="list__link" href="">Отзывы</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="bottom-side__header">
+        <h1 class="header__title">WARPIK</h1>
+        <p class="header__subtitle">С нами любой сильвероид станет играть как человек</p>
+        <a href="https://t.me/punch_and_run" class="svyze" target="_blank">
+        <div class="header__postion-button">
+
+          <p>Связаться с нами</p>
+        </div>
+        </a>
+      </div>
   </header>
 
 
-  <nav class="list">
-    <ul class="list__items">
-      <li class="list__item"><a class="list__link" href="#a-bout">Почему именно мы?</a></li>
-      <img src="image/WhiteLine.svg" class="list__line" alt="Whiteline">
-      <li class="list__item"><a class="list__link" href="">Программы</a></li>
-      <img src="image/WhiteLine.svg" class="list__line" alt="Whiteline">
-      <li class="list__item"><a class="list__link" href="">Коучи</a></li>
-      <img src="image/WhiteLine.svg" class="list__line" alt="Whiteline">
-      <li class="list__item"><a class="list__link" href="">Отзывы</a></li>
-    </ul>
-  </nav>
+
 
   <section class="about" id="a-bout">
     <div class="about__container">
@@ -151,83 +159,119 @@
       <h2 class="workers__title">Наши коучи</h2>
       <div class="coach-slider" id="coachSlider">
         <div class="coach-slide">
-          <div class="coach-image"></div>
-          <div class="coach-info">
-            <h2>Гигачад Жесткий</h2>
-            <p class="coach-role">Мейн роль : <img src="./image/role.svg" alt="role"><span></span></p>
-            <p class="coach-rang">Ранг : <img src="./image/rang.svg" alt="rang"><span>Мастер</span></p>
-            <p class="coach-char">Мейн персонажи : <span>Акали, Талон, Зед</span></p>
-            <div class="about-coach">
-              <h3>ОБО МНЕ :
-                <ul>
-                  <li>
-                    Мастерски владеет механикой Зеда, включая комбо-атаки и использование его умений для
-                    максимального урона и ухода от опасности.
-                  </li>
-                  <li>
-                    Глубокое понимание меты и позиционирования, что позволяет ему эффективно реагировать на изменения в
-                    игровой ситуации и принимать правильные решения на лету.
-                  </li>
-                  <li>
-                    Опыт в обучении игроков на всех уровнях, начиная от новичков до профессиональных команд.
-                  </li>
-                </ul>
-              </h3>
+          <div class="coach-slide1">
+            <div class="coach-image"></div>
+            <div class="coach-info">
+              <h2>Гигачад Жесткий</h2>
+              <div class="row">
+                <div class="row-role">
+                  <p class="coach-role">Мейн роль : </p>
+                  <img src="./image/role.svg" alt="role">
+                </div>
+                <div class="row-rang">
+                  <p class="coach-rang">Ранг : </p>
+                  <img class="coach-rang__img" src="./image/rang.svg" alt="rang">
+                </div>
+              </div>
+              <div class="row-char">
+                <p class="coach-char">Мейн персонажи : <span>Акали, Талон, Зед</span></p>
+              </div>
+              <div class="about-coach">
+                <h3>ОБО МНЕ :
+                  <ul>
+                    <li>
+                      Мастерски владеет механикой Зеда, включая комбо-атаки и использование его умений для
+                      максимального урона и ухода от опасности.
+                    </li>
+                    <li>
+                      Глубокое понимание меты и позиционирования, что позволяет ему эффективно реагировать на изменения в
+                      игровой ситуации и принимать правильные решения на лету.
+                    </li>
+                    <li>
+                      Опыт в обучении игроков на всех уровнях, начиная от новичков до профессиональных команд.
+                    </li>
+                  </ul>
+                </h3>
+              </div>
             </div>
           </div>
-        </div>
+          </div>
         <div class="coach-slide">
-          <div class="coach-image"></div>
-          <div class="coach-info">
-            <h2>Гигачад Жесткий</h2>
-            <p class="coach-role">Мейн роль : <img src="./image/role.svg" alt="role"><span></span></p>
-            <p class="coach-rang">Ранг : <img src="./image/rang.svg" alt="rang"><span>Мастер</span></p>
-            <p class="coach-char">Мейн персонажи : <span>Акали, Талон, Зед</span></p>
-            <div class="about-coach">
-              <h3>ОБО МНЕ :
-                <ul>
-                  <li>
-                    Мастерски владеет механикой Зеда, включая комбо-атаки и использование его умений для
-                    максимального урона и ухода от опасности.
-                  </li>
-                  <li>
-                    Глубокое понимание меты и позиционирования, что позволяет ему эффективно реагировать на изменения в
-                    игровой ситуации и принимать правильные решения на лету.
-                  </li>
-                  <li>
-                    Опыт в обучении игроков на всех уровнях, начиная от новичков до профессиональных команд.
-                  </li>
-                </ul>
-              </h3>
+          <div class="coach-slide1">
+            <div class="coach-image"></div>
+            <div class="coach-info">
+              <h2>Гигачад Жесткий</h2>
+              <div class="row">
+                <div class="row-role">
+                  <p class="coach-role">Мейн роль : </p>
+                  <img src="./image/role.svg" alt="role">
+                </div>
+                <div class="row-rang">
+                  <p class="coach-rang">Ранг : </p>
+                  <img class="coach-rang__img" src="./image/rang.svg" alt="rang">
+                </div>
+              </div>
+              <div class="row-char">
+                <p class="coach-char">Мейн персонажи : <span>Акали, Талон, Зед</span></p>
+              </div>
+              <div class="about-coach">
+                <h3>ОБО МНЕ :
+                  <ul>
+                    <li>
+                      Мастерски владеет механикой Зеда, включая комбо-атаки и использование его умений для
+                      максимального урона и ухода от опасности.
+                    </li>
+                    <li>
+                      Глубокое понимание меты и позиционирования, что позволяет ему эффективно реагировать на изменения в
+                      игровой ситуации и принимать правильные решения на лету.
+                    </li>
+                    <li>
+                      Опыт в обучении игроков на всех уровнях, начиная от новичков до профессиональных команд.
+                    </li>
+                  </ul>
+                </h3>
+              </div>
             </div>
           </div>
-        </div>
+          </div>
         <div class="coach-slide">
-          <div class="coach-image"></div>
-          <div class="coach-info">
-            <h2>Гигачад Жесткий</h2>
-            <p class="coach-role">Мейн роль : <img src="./image/role.svg" alt="role"><span></span></p>
-            <p class="coach-rang">Ранг : <img src="./image/rang.svg" alt="rang"><span>Мастер</span></p>
-            <p class="coach-char">Мейн персонажи : <span>Акали, Талон, Зед</span></p>
-            <div class="about-coach">
-              <h3>ОБО МНЕ :
-                <ul>
-                  <li>
-                    Мастерски владеет механикой Зеда, включая комбо-атаки и использование его умений для
-                    максимального урона и ухода от опасности.
-                  </li>
-                  <li>
-                    Глубокое понимание меты и позиционирования, что позволяет ему эффективно реагировать на изменения в
-                    игровой ситуации и принимать правильные решения на лету.
-                  </li>
-                  <li>
-                    Опыт в обучении игроков на всех уровнях, начиная от новичков до профессиональных команд.
-                  </li>
-                </ul>
-              </h3>
+          <div class="coach-slide1">
+            <div class="coach-image"></div>
+            <div class="coach-info">
+              <h2>Гигачад Жесткий</h2>
+              <div class="row">
+                <div class="row-role">
+                  <p class="coach-role">Мейн роль : </p>
+                  <img src="./image/role.svg" alt="role">
+                </div>
+                <div class="row-rang">
+                  <p class="coach-rang">Ранг : </p>
+                  <img class="coach-rang__img" src="./image/rang.svg" alt="rang">
+                </div>
+              </div>
+              <div class="row-char">
+                <p class="coach-char">Мейн персонажи : <span>Акали, Талон, Зед</span></p>
+              </div>
+              <div class="about-coach">
+                <h3>ОБО МНЕ :
+                  <ul>
+                    <li>
+                      Мастерски владеет механикой Зеда, включая комбо-атаки и использование его умений для
+                      максимального урона и ухода от опасности.
+                    </li>
+                    <li>
+                      Глубокое понимание меты и позиционирования, что позволяет ему эффективно реагировать на изменения в
+                      игровой ситуации и принимать правильные решения на лету.
+                    </li>
+                    <li>
+                      Опыт в обучении игроков на всех уровнях, начиная от новичков до профессиональных команд.
+                    </li>
+                  </ul>
+                </h3>
+              </div>
             </div>
           </div>
-        </div>
+          </div>
         <!-- Add more slides as needed -->
       </div>
     </div>
@@ -331,7 +375,7 @@
         <a href="#" class="footer__social"><img src="image/YT.svg" alt="Social 2"></a>
         <a href="#" class="footer__social"><img src="image/DS.svg" alt="Social 3"></a>
       </div>
-      <p class="footer__slogan">Сюда самый крутой слоган надо</p>
+      <p class="footer__slogan">Поражение - твоя вина, и мы знаем в чем проблема.</p>
     </div>
   </footer>
 

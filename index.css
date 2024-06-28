@@ -10,8 +10,12 @@ html {
   margin: 0;
 }
 
-.header {
-  max-height: 927px;
+.overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0,0,0,0) 80%, rgba(0,0,0,0.8));
+  pointer-events: none;
 }
 
 .header__ari {
@@ -22,17 +26,20 @@ html {
   background-repeat: no-repeat;
 }
 
-.header__logo {
-  top: 55px;
-  left: 155px;
+.top-side__header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2;
 }
 
-.header__logo,
-.header__logo-select {
-  position: absolute;
-  top: 30px;
-  left: 100px;
-  z-index: 10;
+.top-side__left{
+  display: flex;
+  align-items: center;
+}
+
+.header__logo{
+  margin: 20px 0 0 100px;
 }
 
 .header__logo-select {
@@ -44,10 +51,13 @@ html {
   color: white;
   font-size: 28px;
   margin: 0;
-  top: 76px;
-  left: 163px;
-  margin-left: 101px;
   width: 169px;
+}
+
+.bottom-side__header{
+  width: 540px;
+  margin-top: 110px;
+  margin-left: 140px;
 }
 
 
@@ -57,11 +67,7 @@ html {
   font-style: normal;
   font-size: 65px;
   min-width: 169px;
-  height: 116px;
   line-height: 80px;
-  left: 133px;
-  position: relative;
-  bottom: 654px;
   color: white;
   z-index: 3;
 }
@@ -70,9 +76,6 @@ html {
   font-family: "Montserrat-Regular", sans-serif;
   font-weight: 300;
   font-style: normal;
-  position: absolute;
-  top: 396px;
-  left: 138px;
   width: 540px;
   font-size: 25px;
   line-height: 27px;
@@ -83,25 +86,21 @@ html {
 }
 
 .header__postion-button {
-  position: relative;
-  /* width: 40px; */
-  bottom: 655px;
-  left: 132px;
-}
-
-.header__svyze {
-  cursor: pointer;
-  background-color: transparent;
-  border: transparent;
+  background-image: url("./image/button_svyze.svg");
+  width: 390px;
+  height: 64px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .svyze {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-style: normal;
-  bottom: 25px;
-  position: absolute;
-  left: 137px;
   font-size: 21px;
 }
 
@@ -112,18 +111,13 @@ html {
 
 .list {
   text-align: right;
-  position: absolute;
-  top: 8px;
-  right: 76px;
+  margin-right: 100px;
 }
 
 .list__items {
   list-style-type: none;
   padding: 0;
   display: flex;
-  margin-top: 68px;
-  position: relative;
-  right: 52px;
 }
 
 .list__item {
@@ -155,14 +149,6 @@ html {
   width: 1600px;
   height: 327px;
   margin: 0 auto;
-  /* Центрирование по горизонтали */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* Центрирование по вертикали */
-  padding-top: 100px;
-  margin-left: 116px;
-  margin-right: 116px;
 }
 
 .about__title {
@@ -213,7 +199,6 @@ html {
 }
 
 .study {
-  padding-top: 166px;
   width: 100%;
   text-align: center;
 }
@@ -247,6 +232,8 @@ html {
 .study__frames {
   margin: auto;
   position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 .study__frame-inner {
@@ -263,7 +250,14 @@ html {
   opacity: 1;
 }
 
-
+.background__triangle{
+  background-image: url("./image/frame.svg");
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
 .inner-one {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 7)), url('./image/west-splash.svg');
@@ -288,7 +282,7 @@ html {
   top: 64%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transition: opacity 0.5s ease, transform 0.5s ease;
+  transition: opacity 0.5s, transform 0.5s;
   text-align: left;
 }
 
@@ -327,7 +321,7 @@ html {
   transform: translate(-50%, -50%) scale(1);
   top: 30%;
   /* Пример значения, которое поднимает текст наверх */
-  transition: opacity 0.5s ease, transform 0.5s ease, top 0.5s ease;
+  transition: opacity 0.5s , transform 0.5s , top 0.5s ;
   /* Добавлено свойство transition для плавного перехода */
 }
 
@@ -414,7 +408,6 @@ html {
 }
 
 .coach-image {
-  position: relative;
   width: 844px;
   height: 551px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url('./image/Akali.svg');
@@ -423,7 +416,6 @@ html {
   margin-top: 55px;
   margin-bottom: 55px;
   margin-right: 21px;
-  left: 89px;
 }
 
 /* Adjusting the coach-slider styling */
@@ -433,8 +425,36 @@ html {
   color: #fff;
 }
 
+.row{
+  display: flex;
+}
+
+.row-role, .row-rang, .row-char{
+  display: flex;
+  margin-bottom: 12px;
+  font-size: 18px;
+  background-color: #171616;
+  font-family: "Montserrat-Regular";
+  font-weight: 700;
+  font-style: normal;
+  width: 100%;
+  height: 83px;
+  align-items: center;
+}
+
+.row-rang{
+  margin-left: 12px;
+  width: 370px;
+}
+
 .coach-slide {
   position: relative;
+}
+
+.coach-slide1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .coach-slider .slick-prev:before,
@@ -464,15 +484,9 @@ html {
 .coach-info {
   color: white;
   text-align: left;
-  position: absolute;
-  bottom: 100px;
-  right: 514px;
-  top: 20px;
   z-index: 2;
   padding: 31px;
-  max-width: 320px;
   width: 800px;
-  height: 400px;
 }
 
 .coach-info h2 {
@@ -481,42 +495,15 @@ html {
   font-family: "BebasNeue-ru", sans-serif;
   color: #AA759E;
   background-color: #171616;
-  width: 779px;
   height: 39px;
   margin-bottom: 12px;
   padding: 28px 0 25px 31px;
 }
 
-.coach-rang {
-  width: 349px;
-  height: 32px;
-  position: relative;
-  left: 431px;
-  bottom: 106px;
-}
-
-.coach-role {
-  width: 388px;
-  height: 33px;
-}
-
-.coach-char {
-  width: 780px;
-  height: 25px;
-  position: relative;
-  bottom: 107px;
-}
-
 .coach-rang,
 .coach-role,
 .coach-char {
-  margin: 12px 0;
-  font-size: 18px;
-  background-color: #171616;
-  padding: 31px 0 30px 31px;
-  font-family: "Montserrat-Regular";
-  font-weight: 700;
-  font-style: normal;
+  margin-left: 30px;
 }
 
 .coach-role img {
@@ -525,38 +512,26 @@ html {
   bottom: 35px;
 }
 
-.coach-rang img {
-  position: relative;
-  left: 60px;
-  bottom: 64px;
-}
-
-
-.about-coach {
-  margin-top: 12px;
-  width: 811px;
-  bottom: 114px;
-  position: relative;
+.row-rang img {
+  height: 90px;
 }
 
 .about-coach h3 {
-  margin-top: 21px;
+  padding: 19px 0 0 30px;
   font-size: 18px;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-style: normal;
-  padding: 5px 10px;
   background-color: #171616;
-  padding: 19px 36px 0px;
 }
 
 .about-coach ul {
+  padding: 12px 15px 20px 40px;
   font-family: "Montserrat-Regular";
   font-weight: 700;
   font-style: normal;
   line-height: 21.78px;
   font-size: 18px;
-  padding: 18px 15px 36px;
   background-color: #171616;
 }
 
@@ -565,10 +540,8 @@ html {
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
-  position: relative;
-  left: 50px;
   max-width: 739px;
-  height: 83px;
+  padding-bottom: 12px;
 }
 
 /* Reviews Section */
